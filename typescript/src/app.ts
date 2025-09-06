@@ -1,8 +1,8 @@
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
-import './1.introduccion/tipado'
-import './1.introduccion/compilar'
+// import './introduccion/01-tipado'
+// import './introduccion/02-compilar'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
