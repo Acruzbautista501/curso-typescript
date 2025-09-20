@@ -21,6 +21,6 @@ console.log(x[0].substr(1)); // OK
 // Cuando queramos acceder a un elemento sin conocer el mapeo del contenido
 x[3] = "world"; // OK, Un tipo 'string' puede ser asignado a una tupla que contenga 'string | number'
 
-console.log(x[5].toString()); // OK, Un tipo 'string' y un tipo 'number' tienen la función 'toString'
+console.log(x[5]?.toString()); // OK, Un tipo 'string' y un tipo 'number' tienen la función 'toString'
 
 // x[6] = true; // Error,El tipo 'boolean' no es 'string | number'
