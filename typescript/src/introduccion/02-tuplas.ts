@@ -4,7 +4,7 @@
 
 // Declaración de tuplas
 // let x: [string, number];
-let x: [string, number, ...(string | number)[]];
+let x: [string, number, ...(string | number)[]]; // permite extras
 
 // Inicialización correcta
 x = ["hello", 10]; // OK
