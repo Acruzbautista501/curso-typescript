@@ -6,11 +6,12 @@ import viteLogo from '/vite.svg'
 // import './tipos-de-datos/03-enumerados'
 // import './tipos-de-datos/04-any'
 // import './tipos-de-datos/05-void'
-// import './tipos-de-datos/06-let'
-// import './tipos-de-datos/07-const'
-// import './tipos-de-datos/08-forIn'
-// import './tipos-de-datos/09-forOf'
-import './tipos-de-datos/10-funciones'
+import './tipos-de-datos/06-nullUndefined'
+// import './tipos-de-datos/60-let'
+// import './tipos-de-datos/70-const'
+// import './tipos-de-datos/80-forIn'
+// import './tipos-de-datos/90-forOf'
+// import './tipos-de-datos/10-funciones'
 
 
 
