@@ -1,11 +1,11 @@
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
-// import './introduccion/01-primitivos'
-// import './introduccion/02-tuplas'
-//import './introduccion/03-enumerados'
-// import './introduccion/04-any'
-import './introduccion/05-void'
+// import './tipos-de-datos/01-primitivos'
+// import './tipos-de-datos/02-tuplas'
+// import './tipos-de-datos/03-enumerados'
+// import './tipos-de-datos/04-any'
+import './tipos-de-datos/05-void'
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
