@@ -1,62 +1,30 @@
 // Enum
-// Los enumerado en TypeScript, son distintos a los enumerados de otros lenguajes de programación, estos solo almacenan números para identificar las constantes.
-enum Direction {
-
-     Up = 1, // Si se le asigna un valor numerico primero, los siguientes valores empiezan desde el número especificado
-     Down = NaN, // Si le ponemos un NaN despúes de haber inicializado un valor nos obliga a inicializar el siguiente después de este, esto no solo pasa con Nan, pasa con String.length, etc.
-     Left = "asdasd".length,
-     Right = 1 << 1 // También admiten operadores binarios
+/* Un agregado bastante útil que proporciona TypeScript a JavaScript es la posibilidad de utilizar 
+enum. Como en cualquier lenguaje similar a C#, un enum es una forma de dar nombres mas amigables 
+a un grupo de sets de valores numéricos. */
+enum MarcasDeCoche {
+    Toyota,
+    Chevrolet,
+    Ford,
 }
 
-// var a = Direction.Up;
+let prius: MarcasDeCoche = MarcasDeCoche.Toyota;
 
-console.log(Direction.Down);
-// Si no se le especifica el valor por defecto se lo asigna normalmente, también es importante saber, que los enumerados no aceptan que su valor sea un String, solamente número
+console.log(prius);
 
-// Sin asignación de valor
-enum Color {Red, Green, Blue};
-let c: Color = Color.Green;// 1
-console.log(c);
+/* En el ejemplo anterior se imprimiría 0 ya que los enums empiezan en dicho valor. 
+Sin embargo este comportamiento puede ser modificado de forma que inicie por ejemplo en 100. */
+enum MarcasDeCoche1 {
+    Toyota = 100,
+    Chevrolet,
+    Ford,
+}
 
-// Con asignación de valor
-enum Color {Red1 = 1, Green1 = 2, Blue1 = 4};
-let c1: Color = Color.Green1; // 2
-console.log(c1);
+let prius1: MarcasDeCoche1 = MarcasDeCoche1.Toyota;
 
-// También se puede acceder al nombre de los atributos
-enum Color {Red3 = 1, Green3, Blue3};
+console.log(prius1);
 
-let colorName: string = Color[2];
-
-alert(colorName); // Green
-
-// Es muy importante saber que distintos enumerados no pueden ser comparados ya que el nombre de los enumerados no es el mismo, aunque puedan tener el mismo indice númerico.
-// Para comprobar lo que digo utilizaré Type alias, y el ejemplo es el siguiente:
-
-// FOO
-enum FooIdBrand {}
-type FooId = FooIdBrand & string;
-
-// BAR
-enum BarIdBrand {}
-type BarId = BarIdBrand & string;
-
-/**
- * Demo
- */
-var fooId: FooId;
-var barId: BarId;
-
-// Por seguridad
-// fooId = barId; // error
-// barId = fooId; // error
-
-// Newing up
-fooId = 'foo' as FooId;
-barId = 'bar' as BarId;
-
-// Los dos tipos son compatibles con la base
-// que en este caso es string
-var str: string;
-str = fooId;
-str = barId;
+/* En los ejemplos anteriores hemos accesado el valor de un enumerador, pero que pasa si quisieramos 
+obtener el nombre del índice donde este se encuentra, para ello echamos mano de la referencia de la 
+posición numérica de dicho índice. */
+console.log(MarcasDeCoche[0]); // El valor impreso sería Toyota como tipo string.
