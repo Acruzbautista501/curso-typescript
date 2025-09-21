@@ -9,7 +9,8 @@ import viteLogo from '/vite.svg'
 // import './tipos-de-datos/06-let'
 // import './tipos-de-datos/07-const'
 // import './tipos-de-datos/08-forIn'
-import './tipos-de-datos/09-forOf'
+// import './tipos-de-datos/09-forOf'
+import './tipos-de-datos/10-funciones'
 
 
 
