@@ -5,7 +5,8 @@ import viteLogo from '/vite.svg'
 // import './tipos-de-datos/02-tuplas'
 // import './tipos-de-datos/03-enumerados'
 // import './tipos-de-datos/04-any'
-import './tipos-de-datos/05-void'
+// import './tipos-de-datos/05-void'
+import './tipos-de-datos/06-let'
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
