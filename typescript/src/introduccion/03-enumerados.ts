@@ -8,7 +8,7 @@ enum Direction {
      Right = 1 << 1 // También admiten operadores binarios
 }
 
-var a = Direction.Up;
+// var a = Direction.Up;
 
 console.log(Direction.Down);
 // Si no se le especifica el valor por defecto se lo asigna normalmente, también es importante saber, que los enumerados no aceptan que su valor sea un String, solamente número
@@ -31,7 +31,7 @@ let colorName: string = Color[2];
 alert(colorName); // Green
 
 // Es muy importante saber que distintos enumerados no pueden ser comparados ya que el nombre de los enumerados no es el mismo, aunque puedan tener el mismo indice númerico.
-// Para comprobar lo que digo utilizaré Type alias, y el ejemplo es el siguinte:
+// Para comprobar lo que digo utilizaré Type alias, y el ejemplo es el siguiente:
 
 // FOO
 enum FooIdBrand {}
