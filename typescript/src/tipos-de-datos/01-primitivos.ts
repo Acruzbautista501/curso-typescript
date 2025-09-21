@@ -59,7 +59,8 @@ console.log(literalString)
 // // move(1,"Nurth"); // Error!
 
 // Array
-// TypeScript al igual que JavaScript, permite trabajar con arreglos de valores. Los arreglos pueden ser escritos de dos formas posibles. La primera es usando los paréntesis [] para denotar un arreglo del tipo definido
+// TypeScript al igual que JavaScript, permite trabajar con arreglos de valores. Los arreglos pueden ser escritos de dos formas posibles. 
+// La primera es usando los paréntesis [] para denotar un arreglo del tipo definido
 let list: number[] = [1, 2, 3];
 console.log(list);
 // Otra forma de declarar el mismo arreglo es el uso del constructor Array<tipo>.

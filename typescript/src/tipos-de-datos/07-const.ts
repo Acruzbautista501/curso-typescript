@@ -1,7 +1,7 @@
 // Const
 // Ha sido añadido en ES6 / TypeScript permitiendonos añadir variables inmutables también conocidas como constantes.
 // El uso de const es una buena práctica de mantenimiento y legibilidad.
-// Las constantes deben de ser declaradas y asignadas siempre
+// Las constantes deben de ser declaradas y asignadas siempre.
 
 const foo = 123;
 // foo = 456; // NO permitido

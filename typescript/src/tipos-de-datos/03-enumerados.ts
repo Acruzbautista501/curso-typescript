@@ -3,7 +3,7 @@
 enum Direction {
 
      Up = 1, // Si se le asigna un valor numerico primero, los siguientes valores empiezan desde el número especificado
-     Down = NaN, // Si le ponemos un NaN despúes de haber inicializado un valor nos obliga a inicializar el siguiente desués de este, esto no solo pasa con Nan, pasa con String.length, etc.
+     Down = NaN, // Si le ponemos un NaN despúes de haber inicializado un valor nos obliga a inicializar el siguiente después de este, esto no solo pasa con Nan, pasa con String.length, etc.
      Left = "asdasd".length,
      Right = 1 << 1 // También admiten operadores binarios
 }
