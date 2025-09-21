@@ -1,0 +1,37 @@
+// Unions
+/* El sistema de tipos de TypeScript permite crear nuevos tipos utilizando una variedad de operadores. 
+Ahora que sabemos como escribir algunos tipos es tiempo de combinarlos en formas interesantes. */
+
+// Utilizar union en TypeScript
+/* La primera forma de combinar tipos es utilizando uniones. En una unión los tipos que forman 
+parte de esta se le llaman miembros. */
+
+/* Supongamos que tenemos una función que imprime el valor de un identificador, este puede 
+ser un número o un string. */
+function imprimirId(id: number | string) {
+    console.log(`El id es ${id}`);
+}
+
+imprimirId(1);
+imprimirId("abc");
+
+/* Como vemos en el ejemplo hemos definido un parámetro id el cual puede ser number | string (number o string). 
+Por lo tanto cuando invocamos la función podemos enviar tanto un tipo como el otro. */
+
+// Trabajar con uniones
+/* Supongamos ahora que dentro de nuestra función deseamos utilizar los métodos asociados aid que puede ser 
+number o string. Como cada uno de estos tipos tiene diferentes métodos se hace necesario primero hacer una 
+verificación del tipo para poder interactuar con este. */
+function imprimirId1(id: number | string) {
+    if (typeof id === "string") {
+        console.log(`El id es ${(id as string).toUpperCase()}`);
+    } else {
+        console.log(`El id es ${(id as number).toFixed(2)}`);
+    }
+}
+
+imprimirId1("este_es_mi_id");
+imprimirId1(100.234234123);
+// Como podemos ver en el ejemplo anterior hemos actualizado la función para:
+// Cambiar a mayúsculas el id cuando este sea un string. toUpperCase()
+// Reducir el número de decimales a 2 cuando es un número. toFixed(2)
