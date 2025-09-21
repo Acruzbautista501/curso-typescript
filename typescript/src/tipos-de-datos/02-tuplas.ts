@@ -1,26 +1,14 @@
 
 // Tuplas
-// Como en base de datos, hacen referencia a registros clave / valor
+/* Las tuplas permiten expresar un arreglo con un número fijo conocido de elementos, pero que no requieren ser los mismos. 
+Por ejemplo para representar una tupla que contenga un string y un number. */
 
-// Declaración de tuplas
-// let x: [string, number];
-let x: [string, number, ...(string | number)[]]; // permite extras
+let futbolista: [string, number];
 
-// Inicialización correcta
-x = ["hello", 10]; // OK
+futbolista = ["Raul Jimenez", 28];
 
-// Inicialización incorrecta
-// x = [10, "hello"]; // Error
+//  Si intentamos capturar otro tipo de valores que no sean consistentes con los que se han definido en la tupla, TypeScript nos generará un error.
 
-console.log(x)
-
-// Para acceder a los datos dentro de las tuplas de las cuales sabes el índice se hace así:
-console.log(x[0].substr(1)); // OK
-// console.log(x[1].substr(1)); // Error, Un tipo 'number' no tiene la función 'substr'
-
-// Cuando queramos acceder a un elemento sin conocer el mapeo del contenido
-x[3] = "world"; // OK, Un tipo 'string' puede ser asignado a una tupla que contenga 'string | number'
-
-console.log(x[5]?.toString()); // OK, Un tipo 'string' y un tipo 'number' tienen la función 'toString'
-
-// x[6] = true; // Error,El tipo 'boolean' no es 'string | number'
+// Para acceder a los elementos de una tupla tenemos que utilizar su índice.
+console.log(`El nombre es ${futbolista[0]}`);
+console.log(`Su edad es ${futbolista[1]}`);
