@@ -7,7 +7,8 @@ import viteLogo from '/vite.svg'
 // import './tipos-de-datos/04-any'
 // import './tipos-de-datos/05-void'
 // import './tipos-de-datos/06-let'
-import './tipos-de-datos/07-const'
+// import './tipos-de-datos/07-const'
+import './tipos-de-datos/08-forIn'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
