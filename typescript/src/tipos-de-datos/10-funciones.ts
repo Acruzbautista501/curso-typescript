@@ -36,8 +36,7 @@ setTimeout (()=> {
 
              // Si existiera Any tendriamos que controlar la excepción
              // Como buenas practicas y ya que este código al fin y al cabo
-             // será javascript y es vulnerable a inyeción siempre está bien
-             // realizar el control de las posibles excepciones
+             // será javascript y es vulnerable a inyeción siempre está bien realizar el control de las posibles excepciones
              throw new Error(`Expected String or number, got '${padding}' `);
 
     }
@@ -45,3 +44,15 @@ setTimeout (()=> {
     console.log(padLeft("hello", "aaa")); // Ejemplo de función con texto -> Funciona
     console.log(padLeft("hello", 5)); // Ejemplo de función con número -> Funciona
     // console.log(padLeft("hello", true)); // Ejemplo de función con texto -> NO FUNCIONA (no compila)
+
+
+// TypeScript admite que se declaren parametros opcionales de la siguiente forma utilizando la ?:
+// Compilado con --strictNullChecks
+// function validateEntity(e: Entity?) {
+//     // Lanza una excepción si e es null o si es una entidad no válida
+// }
+
+// function processEntity(e: Entity?) {
+//     validateEntity(e);
+//     let s = e!.name;  // Afirmar que e no es null y acceder a name
+// }
