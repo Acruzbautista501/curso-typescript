@@ -3,7 +3,9 @@ import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 // import './introduccion/01-primitivos'
 // import './introduccion/02-tuplas'
-import './introduccion/03-enumerados'
+//import './introduccion/03-enumerados'
+import './introduccion/04-any'
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
