@@ -1,25 +1,67 @@
 
-// Ejercicio 1
-const APP_NAME:string = 'Mi primera aplicación'; // Constante para nombrar la app
-let usuario: string = ' Aldair'; // Variable para el nombre de usuario
+/* Conceptos */
+// console.log("¡Hola mundo desde TypeScript!")
 
-console.log(APP_NAME + usuario)
+// console.log("Mi nombre es Aldair")
+// console.log("Tengo 24 años")
+// console.log("Hoy empiezo a trabajar")
 
-// Ejercicio 2
-let edad: number = 25; // Es de tipo let, porque la edad puede variar
-const esEstudiante: boolean = false; // Es de tipo const por que su valor no se puede camboiar
-const curso: string = 'Programación' // Constante para nombrar la app
+/* Comentarios */
+// Declaramaos una variable con nuestro nombre
+const nombre:string = "Aldair";
 
-edad = 35;
+//Mostramos un saludo
+console.log("Hola, " + nombre);
 
-console.log(edad)
+/*
+  En este progrmama:
+  -Creamos una variable
+  -Mostramos un mensaje
+*/
 
-// Ejercicio 3
-const producto = {
-    id: 1,
-    nombre: 'Xbox Series s',
-    precio: 8700,
-    enStock: true
+// Mensaje de Bienvenida
+// Declaramos un mensaje de bienvenida}
+const saludo: string = 'Esto es un saludo desde TypeScript.';
+console.log('Hola amigos. ' + saludo);
+
+/*
+  En este programa:
+  -Creamos una variable que contiene un saludo
+  -Mostramos el mensaje en la consola
+*/
+
+/* Indentación */
+const edad:number = 18;
+
+if (edad >= 18) {
+  console.log("Eres mayor de edad");
+}
+else {
+  console.log("Eres menor de edad");
 }
 
-console.log(`ID: ${producto.id} - Produco: ${producto.nombre} - Precio ${producto.precio} - Disponible: ${producto.enStock ? 'sí' : 'no'}`)
+
+const numero: number = 10;
+if (numero > 5) {
+  console.log("El número es mayor que 5");
+} else {
+  console.log("El número es menor o igual a 5")
+}
+
+/* Convenciones de nombres */
+const nombreUsuario: string = "Aldair";
+const edadUsuario: number = 25;
+
+console.log("Nombre:", nombreUsuario);
+console.log("Edad:", edadUsuario);
+
+const ciudad: string = 'Naranjos';
+const color: string = 'Negro'
+const PAIS: string = 'México'
+
+
+console.log("Ciudad:", ciudad);
+console.log("Color:", color);
+console.log("País:", PAIS);
+
+

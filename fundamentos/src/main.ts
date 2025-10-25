@@ -1,8 +1,8 @@
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
-// import './ejemploBases'
-import './ejemploControlBucles'
+import './ejemploBases'
+// import './ejemploControlBucles'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
