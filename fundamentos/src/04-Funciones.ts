@@ -1,6 +1,7 @@
 
 /* Funciones */
-function nombreDeLaFuncion() { // Bloque de código que ejecuta la función
+function nombreDeLaFuncion() { 
+  // Bloque de código que ejecuta la función
 }
 
 // Para ejecutar la función:
