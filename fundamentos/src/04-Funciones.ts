@@ -47,7 +47,7 @@ function saludarPersona(nombre: string) { // el parámetro nombre es de tipo str
 saludarPersona('Aldair');
 saludarPersona('María')
 
-// Funciones con vario parámetros
+// Funciones con varios parámetros
 function sumar(a: number, b:number) { // números que recibe la función.
   console.log('La suma es:', a + b); // operación realizada.
 }
