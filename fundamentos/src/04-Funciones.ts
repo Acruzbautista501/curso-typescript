@@ -12,8 +12,8 @@ function saludar() {
   console.log('¡Hola, bienvenido a TypeScript!');
 }
 
-saludar();
-saludar();
+saludar(); // Ejecutamos la función
+saludar(); // Podemos ejecutarla de nuevo
 
 // Ejercicio guiado 1
 function mostrarMensaje() {
