@@ -5,7 +5,8 @@ import viteLogo from '/vite.svg'
 // import './02-ControlBucles'
 // import './03-Estructuras'
 // import './04-Funciones'
-import './05-Arreglos'
+// import './05-Arreglos'
+import './06-Objetos'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
