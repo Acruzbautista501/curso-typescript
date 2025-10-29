@@ -5,9 +5,33 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+        <style>
+      body { font-family: system-ui, sans-serif; padding: 1rem; }
+      .error { color: #b00020; font-weight: 600; }
+      button { margin-left: 0.5rem; }
+      li { margin: 0.4rem 0; }
+      .small { font-size: 0.9rem; color: #555; }
+    </style>
   </head>
   <body>
     <div id="app"></div>
+    <h1 id="titulo">Lista de tareas</h1>
+
+    <form id="todoForm" aria-label="Agregar tarea">
+      <input id="todoInput" type="text" placeholder="Escribe una tarea (máx 50 caracteres)" maxlength="200" />
+      <button type="submit">Agregar</button>
+      <span id="errorMsg" class="error" role="alert" aria-live="assertive"></span>
+    </form>
+
+    <p class="small">Presiona Enter en el campo para enviar (comportamiento por defecto).</p>
+
+    <h2>Contador de clics</h2>
+    <button id="contadorBtn">Clic aquí</button>
+    <div id="contadorDisplay">Veces: 0</div>
+
+    <h2>Tareas</h2>
+    <ul id="todoList" aria-live="polite"></ul>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
