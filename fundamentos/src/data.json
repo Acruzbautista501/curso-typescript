@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Isilda",
+        "last": "Fogaça"
+      },
+      "location": {
+        "street": {
+          "number": 8183,
+          "name": "Rua Espirito Santo "
+        },
+        "city": "Várzea Grande",
+        "state": "São Paulo",
+        "country": "Brazil",
+        "postcode": 30267,
+        "coordinates": {
+          "latitude": "-73.7656",
+          "longitude": "109.7561"
+        },
+        "timezone": {
+          "offset": "+3:00",
+          "description": "Baghdad, Riyadh, Moscow, St. Petersburg"
+        }
+      },
+      "email": "isilda.fogaca@example.com",
+      "login": {
+        "uuid": "7748d5fe-3361-4803-86b9-2ffe621ef39e",
+        "username": "purpledog979",
+        "password": "reilly",
+        "salt": "oxfGaocy",
+        "md5": "ab24bb7e4827f6928c79318cbd13f5cd",
+        "sha1": "25c93a09ed16da9ebbf3a7d25e0fc1b45dd34b24",
+        "sha256": "93a347e84a9a43cc555d7a54d44e7bd9c47d26b00caf6d316790611257292d82"
+      },
+      "dob": {
+        "date": "2000-05-09T08:50:09.640Z",
+        "age": 25
+      },
+      "registered": {
+        "date": "2020-06-28T20:54:57.097Z",
+        "age": 5
+      },
+      "phone": "(11) 9925-9957",
+      "cell": "(44) 9378-3014",
+      "id": {
+        "name": "CPF",
+        "value": "824.133.132-46"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/42.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/42.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/42.jpg"
+      },
+      "nat": "BR"
+    }
+  ],
+  "info": {
+    "seed": "f97756b16405bbb3",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
