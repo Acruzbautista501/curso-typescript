@@ -10,7 +10,7 @@ console.log("Fin");             // 4. Muestra "Fin"
 //Ejercicio 1
 console.log('Preparación de cafe soluble')
 console.log('1. Pon a hervir una taza de agua en posillo y espera que hierva.');
-console.log('2. Una vez que hervida el agua, proceda prepaparar el cáfe.');
+console.log('2. Una vez que hierva el agua, proceda prepaparar el cáfe.');
 console.log('3. Mezcla una o dos cucharadas de café y agrega azúcar al gusto, hasta que se disuelva todo.');
 console.log('4. Y listo, ya tenemos nuestro café preparado');
 

@@ -30,6 +30,16 @@ console.log('Hola amigos. ' + saludo);
   -Mostramos el mensaje en la consola
 */
 
+// Datos personales
+// Declaramos una lista con datos personales
+const nombreDato:string = 'Aldair'
+const edadDato: string = '24'
+const mensajeDato: string = '¡Hoy empiezo a aprender a programar!'
+
+console.log('Mi nombre es ' + nombreDato);
+console.log('Tengo ' + edadDato + ' años');
+console.log(mensajeDato)
+
 /* Indentación */
 const edad:number = 18;
 
